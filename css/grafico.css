@@ -1,0 +1,14 @@
+.container-graficos {
+  width: 500px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container-graficos #myChart {
+  width: 100%;
+  padding: 10px;
+}

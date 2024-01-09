@@ -1,0 +1,213 @@
+html * {
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --bg-cor-automacao: linear-gradient(
+    219deg,
+    #ffb801 -9.83%,
+    #fd5c01 35.34%,
+    #fcd401 113.13%,
+    #0772a2 212.88%
+  );
+  --cor-automacao: #fcff6a;
+  --cor-primaria: #ffffff;
+  --cor-segundaria: #f5f5f5;
+  --cor-terciaria: #000000;
+  --cor-item-1: #b0b0b0;
+  --cor-item-2: #717171;
+  --cor-item-3: #3f8ae2;
+
+  --mg-0: 0px;
+  --pd-0: 0px;
+  --gap-10: 10px;
+  --gap-20: 10px;
+  --gap-30: 10px;
+  --gap-40: 10px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--cor-terciaria);
+  display: grid;
+  justify-content: center;
+}
+#container-pai {
+  width: 1440px;
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: grid;
+}
+
+.container-topo-produto {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 2;
+}
+.container-topo-produto .left-said {
+  display: flex;
+  align-items: center;
+}
+.left-said .label {
+  font-weight: 900;
+  color: var(--cor-terciaria);
+  font-size: 30px;
+}
+
+.left-said .label img {
+  width: 13px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 13px;
+}
+
+.left-said .select-modulo .container-select-modulo-topo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  position: relative;
+  margin: 20px;
+}
+
+.left-said
+  .label
+  .select-modulo
+  .container-select-modulo-topo
+  .conteudo-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.left-said
+  .select-modulo
+  .container-select-modulo-topo
+  .conteudo-select
+  .conteudo {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.left-said
+  .select-modulo
+  .container-select-modulo-topo
+  .conteudo-select
+  .conteudo
+  img {
+  width: 18px;
+}
+.left-said
+  .select-modulo
+  .container-select-modulo-topo
+  .conteudo-select
+  .conteudo
+  .abreviacao {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 700;
+}
+.abreviacao.A {
+  background: linear-gradient(
+    219deg,
+    #ffb801 -9.83%,
+    #fd5c01 35.34%,
+    #fcd401 113.13%,
+    #0772a2 212.88%
+  );
+  color: #fcff6a;
+}
+
+.left-said
+  .select-modulo
+  .container-select-modulo-topo
+  .conteudo-select
+  .conteudo
+  .nome {
+  display: block;
+  margin-left: 6px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.right-said {
+  display: flex;
+  align-items: center;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
+.conteudo-pagina .rodape {
+  width: 100%;
+  background: #f9f9f9;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+.conteudo-pagina .rodape .label-rodape {
+  color: #000;
+  font-size: 22px;
+  font-weight: 900;
+}
+.conteudo-pagina .rodape .label-rodape img {
+  margin-bottom: 13px;
+  width: 13px;
+}
+
+.conteudo-pagina .grafico-container .conteudo-grafico {
+  display: flex;
+}
+
+.conteudo-pagina .grafico-container .conteudo-grafico a {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid #ececec;
+  box-sizing: border-box;
+  position: relative;
+  margin: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-weight: 500;
+  background-color: var(--cor-primaria);
+}
+.conteudo-pagina .grafico-container .conteudo-grafico a:hover {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.conteudo-grafico a.ativo {
+  background-color: #007bff; /* Cor de destaque para o botão ativo */
+  color: #fff; /* Cor do texto para o botão ativo */
+}
